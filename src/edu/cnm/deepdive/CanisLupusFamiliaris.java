@@ -1,6 +1,6 @@
 package edu.cnm.deepdive;
 
-public class CanisLupusFamiliaris extends CanisLupus {
+public class CanisLupusFamiliaris extends CanisLupus implements Trainable {
 
   private static int instanceCount = 0;
 
@@ -21,4 +21,9 @@ public class CanisLupusFamiliaris extends CanisLupus {
     System.out.println("Bark, unless I'm a Basenji.");
   }
 
+  @Override
+  public void perform() {
+    System.out.println("Sit, speak, roll over, play dead.");
+  }
+  
 }
